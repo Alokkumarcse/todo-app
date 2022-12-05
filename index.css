@@ -1,0 +1,108 @@
+/* remove default styles */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* style for body */
+body{
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: rgb(238, 231, 231);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* ! removing scroll bar but content scroll */
+.app::-webkit-scrollbar{
+  /* first way */
+  /* display: none; */
+  /*another way to hide, with help of width give scroll bar thickness */
+  width: 0;
+}
+
+/* ! style rules for app container */
+.app{
+  width: 400px;
+  height: 95vh;
+  border: 7px solid rgb(208, 219, 201);
+  border-radius: 7px;
+  padding: 20px;
+  background-color: #fff;
+  overflow-y:scroll;
+}
+
+/* ! style for app name */
+h4{
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: 800;
+  color:rgb(93, 157, 230);
+  text-shadow: red 0 3px;
+}
+
+/* style ruels for add task container */
+#add__task{
+  padding:10px;
+  border-radius: 7px;
+  cursor: pointer;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(193, 224, 198);
+}
+
+#add__task span{
+  font-style:oblique;
+  font-family: cursive;
+  text-transform: uppercase;
+}
+
+#add__task i{
+  background-color: rgb(235, 220, 180);
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* ! style for task heading */
+h5{
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color:rgb(116, 160, 34);
+  text-shadow: rgb(68, 68, 133) 0px 2px;
+}
+/* style rules for task-card which is added into taskList */
+#tasks{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  gap:20px;
+}
+
+#tasks div{
+  border: 2px solid rgb(151, 190, 158);
+  border-radius: 7px;
+  padding: 10px;
+  background-color: rgb(193, 224, 198);
+  display: grid;
+  gap:10px;
+}
+
+.options{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+  padding: 5px;
+}
+
+.options i {
+  cursor: pointer;
+}
